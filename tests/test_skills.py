@@ -11,7 +11,7 @@ import yaml
 
 def test_skills():
     skill_files = glob.glob("skills/*/SKILL.md")
-    assert len(skill_files) >= 2, f"Expected at least 2 skills, found {len(skill_files)}"
+    assert len(skill_files) >= 3, f"Expected at least 3 skills, found {len(skill_files)}"
 
     for path in skill_files:
         print(f"Checking {path}...")
