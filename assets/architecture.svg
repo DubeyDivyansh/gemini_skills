@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="archTitle archDesc">
+  <title id="archTitle">gemini_skills Architecture &amp; Execution Pipeline</title>
+  <desc id="archDesc">Lifecycle of a skill from intent recognition through execution and delivery.</desc>
+
+  <defs>
+    <linearGradient id="flowBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B111E" />
+      <stop offset="100%" stop-color="#080C14" />
+    </linearGradient>
+
+    <linearGradient id="pipeNode" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <filter id="nodeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="340" rx="16" fill="url(#flowBg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Title & Section Header -->
+  <g transform="translate(48, 36)">
+    <text x="0" y="0" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SYSTEM WORKFLOW</text>
+    <text x="0" y="24" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700">Autonomous Skill Discovery &amp; Execution Cycle</text>
+  </g>
+
+  <!-- Connecting Pathway Lines -->
+  <path d="M 270 190 L 330 190" stroke="#38BDF8" stroke-width="2" stroke-dasharray="5 5" />
+  <polygon points="330,190 322,185 322,195" fill="#38BDF8" />
+
+  <path d="M 570 190 L 630 190" stroke="#818CF8" stroke-width="2" stroke-dasharray="5 5" />
+  <polygon points="630,190 622,185 622,195" fill="#818CF8" />
+
+  <path d="M 870 190 L 930 190" stroke="#34D399" stroke-width="2" stroke-dasharray="5 5" />
+  <polygon points="930,190 922,185 922,195" fill="#34D399" />
+
+  <!-- ================= NODE 1: USER INTENT ================= -->
+  <g transform="translate(48, 105)">
+    <rect width="222" height="170" rx="12" fill="url(#pipeNode)" stroke="#334155" stroke-width="1.2" />
+    <rect x="0" y="0" width="222" height="6" rx="3" fill="#38BDF8" />
+    <circle cx="28" cy="34" r="12" fill="#0369A1" />
+    <text x="24" y="38" fill="#E0F2FE" font-family="monospace" font-size="12" font-weight="700">1</text>
+    <text x="50" y="38" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">User Request</text>
+
+    <text x="20" y="75" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Natural Language Prompts:</text>
+    <rect x="18" y="85" width="186" height="32" rx="6" fill="#0F172A" />
+    <text x="26" y="105" fill="#E2E8F0" font-family="monospace" font-size="10">"package codebase in PDF"</text>
+
+    <rect x="18" y="123" width="186" height="32" rx="6" fill="#0F172A" />
+    <text x="26" y="143" fill="#E2E8F0" font-family="monospace" font-size="10">"summarize in a table"</text>
+  </g>
+
+  <!-- ================= NODE 2: SKILL MATCHING ================= -->
+  <g transform="translate(348, 105)">
+    <rect width="222" height="170" rx="12" fill="url(#pipeNode)" stroke="#334155" stroke-width="1.2" />
+    <rect x="0" y="0" width="222" height="6" rx="3" fill="#818CF8" />
+    <circle cx="28" cy="34" r="12" fill="#4338CA" />
+    <text x="24" y="38" fill="#EEF2FF" font-family="monospace" font-size="12" font-weight="700">2</text>
+    <text x="50" y="38" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">Skill Activation</text>
+
+    <text x="20" y="75" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Router parses SKILL.md:</text>
+    <text x="20" y="100" fill="#CBD5E1" font-family="monospace" font-size="11">✓ Read trigger rules</text>
+    <text x="20" y="122" fill="#CBD5E1" font-family="monospace" font-size="11">✓ Ingest constraints</text>
+    <text x="20" y="144" fill="#CBD5E1" font-family="monospace" font-size="11">✓ Select archetype/script</text>
+  </g>
+
+  <!-- ================= NODE 3: DETERMINISTIC EXECUTION ================= -->
+  <g transform="translate(648, 105)">
+    <rect width="222" height="170" rx="12" fill="url(#pipeNode)" stroke="#334155" stroke-width="1.2" />
+    <rect x="0" y="0" width="222" height="6" rx="3" fill="#C084FC" />
+    <circle cx="28" cy="34" r="12" fill="#7E22CE" />
+    <text x="24" y="38" fill="#FAF5FF" font-family="monospace" font-size="12" font-weight="700">3</text>
+    <text x="50" y="38" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">Execution Layer</text>
+
+    <text x="20" y="75" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Deterministic Processing:</text>
+    <text x="20" y="100" fill="#CBD5E1" font-family="monospace" font-size="11">• ReportLab Platypus</text>
+    <text x="20" y="122" fill="#CBD5E1" font-family="monospace" font-size="11">• Textwrap line clamping</text>
+    <text x="20" y="144" fill="#CBD5E1" font-family="monospace" font-size="11">• Matrix cell formatting</text>
+  </g>
+
+  <!-- ================= NODE 4: HIGH-SIGNAL DELIVERY ================= -->
+  <g transform="translate(948, 105)">
+    <rect width="204" height="170" rx="12" fill="url(#pipeNode)" stroke="#334155" stroke-width="1.2" />
+    <rect x="0" y="0" width="204" height="6" rx="3" fill="#34D399" />
+    <circle cx="28" cy="34" r="12" fill="#047857" />
+    <text x="24" y="38" fill="#ECFDF5" font-family="monospace" font-size="12" font-weight="700">4</text>
+    <text x="50" y="38" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700">Verified Output</text>
+
+    <text x="20" y="75" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Guaranteed Results:</text>
+    <text x="20" y="100" fill="#34D399" font-family="monospace" font-size="11">✓ Zero Token Leakage</text>
+    <text x="20" y="122" fill="#34D399" font-family="monospace" font-size="11">✓ Validated PDF Sentinel</text>
+    <text x="20" y="144" fill="#34D399" font-family="monospace" font-size="11">✓ Scannable Matrices</text>
+  </g>
+</svg>

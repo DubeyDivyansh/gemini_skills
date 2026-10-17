@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">gemini_skills - Autonomous AI Agent Skills</title>
+  <desc id="desc">Production-ready agent skills for Gemini CLI, Antigravity, and coding LLMs.</desc>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Gemini Brand Gradient -->
+    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#162032" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2238" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="380" rx="20" fill="url(#bgGradient)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="1200" height="380" rx="20" fill="url(#grid)" />
+
+  <!-- Ambient Glow Behind Right Cards -->
+  <circle cx="880" cy="180" r="140" fill="#38BDF8" opacity="0.08" filter="url(#subtleGlow)" />
+  <circle cx="1060" cy="240" r="120" fill="#818CF8" opacity="0.08" filter="url(#subtleGlow)" />
+
+  <!-- ================= LEFT COLUMN: HERO IDENTITY ================= -->
+  <g transform="translate(60, 50)">
+    <!-- Pill Badge -->
+    <rect width="280" height="28" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <circle cx="14" cy="14" r="5" fill="#38BDF8" />
+    <text x="28" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">
+      GEMINI &amp; AGENT CAPABILITIES
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="80" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="800" letter-spacing="-1">
+      gemini<tspan fill="url(#geminiGrad)">_skills</tspan>
+    </text>
+
+    <!-- Subtitle / Value Prop -->
+    <text x="0" y="122" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400">
+      Production-grade autonomous agent skills engineered for
+    </text>
+    <text x="0" y="148" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">
+      Gemini CLI, Google Antigravity, and Agentic Coding Runtimes.
+    </text>
+
+    <!-- Key Metadata Tags -->
+    <g transform="translate(0, 185)">
+      <!-- Tag 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="150" height="32" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+        <text x="14" y="20" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="600">⚡ Token-Efficient</text>
+      </g>
+      <!-- Tag 2 -->
+      <g transform="translate(160, 0)">
+        <rect width="165" height="32" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+        <text x="14" y="20" fill="#818CF8" font-family="monospace" font-size="12" font-weight="600">📄 PDF Spec Engine</text>
+      </g>
+      <!-- Tag 3 -->
+      <g transform="translate(335, 0)">
+        <rect width="160" height="32" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+        <text x="14" y="20" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">📊 Matrix Archetypes</text>
+      </g>
+    </g>
+
+    <!-- Compatibility Footnote -->
+    <g transform="translate(0, 245)">
+      <circle cx="6" cy="6" r="3" fill="#10B981" />
+      <text x="18" y="10" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13">
+        Tested on Antigravity Agent • Gemini CLI • Claude Code • Open Public Repo
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: INTERACTIVE VISUAL CARDS ================= -->
+
+  <!-- Skill Card 1: pdf-agentic-guide-creator -->
+  <g transform="translate(640, 45)">
+    <rect width="500" height="135" rx="14" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1.2" />
+    
+    <!-- Header bar -->
+    <rect width="500" height="32" rx="14" fill="#1E293B" />
+    <path d="M 0 18 Q 0 32 14 32 L 486 32 Q 500 32 500 18 Z" fill="#1E293B" />
+    <!-- Window controls -->
+    <circle cx="18" cy="16" r="4.5" fill="#EF4444" />
+    <circle cx="32" cy="16" r="4.5" fill="#F59E0B" />
+    <circle cx="46" cy="16" r="4.5" fill="#10B981" />
+    
+    <text x="70" y="20" fill="#E2E8F0" font-family="monospace" font-size="12" font-weight="700">skill: pdf-agentic-guide-creator</text>
+    <rect x="390" y="8" width="95" height="18" rx="6" fill="#0369A1" />
+    <text x="402" y="21" fill="#E0F2FE" font-family="monospace" font-size="10" font-weight="600">-85% TOKENS</text>
+
+    <!-- Card Content -->
+    <text x="20" y="58" fill="#94A3B8" font-family="monospace" font-size="11">
+      <tspan fill="#38BDF8">Input:</tspan> Deep gap analysis, modular code &amp; SOP guidelines
+    </text>
+    <text x="20" y="80" fill="#94A3B8" font-family="monospace" font-size="11">
+      <tspan fill="#818CF8">Syntax:</tspan> <tspan fill="#F1F5F9">=== BEGIN FILE: &lt;path&gt; ===</tspan> ReportLab Platypus
+    </text>
+    <text x="20" y="102" fill="#94A3B8" font-family="monospace" font-size="11">
+      <tspan fill="#34D399">Deliverable:</tspan> Unclipped, machine-parseable PDF specification
+    </text>
+    <line x1="20" y1="116" x2="480" y2="116" stroke="#334155" stroke-width="0.8" stroke-dasharray="4 4" />
+    <text x="20" y="128" fill="#64748B" font-family="monospace" font-size="10">Sentinel check: assert "=== END OF SPECIFICATION ===" in last_page</text>
+  </g>
+
+  <!-- Skill Card 2: table-summarizer -->
+  <g transform="translate(640, 195)">
+    <rect width="500" height="135" rx="14" fill="url(#cardGrad2)" stroke="#334155" stroke-width="1.2" />
+    
+    <!-- Header bar -->
+    <rect width="500" height="32" rx="14" fill="#1E293B" />
+    <path d="M 0 18 Q 0 32 14 32 L 486 32 Q 500 32 500 18 Z" fill="#1E293B" />
+    <!-- Window controls -->
+    <circle cx="18" cy="16" r="4.5" fill="#EF4444" />
+    <circle cx="32" cy="16" r="4.5" fill="#F59E0B" />
+    <circle cx="46" cy="16" r="4.5" fill="#10B981" />
+    
+    <text x="70" y="20" fill="#E2E8F0" font-family="monospace" font-size="12" font-weight="700">skill: table-summarizer</text>
+    <rect x="375" y="8" width="110" height="18" rx="6" fill="#065F46" />
+    <text x="385" y="21" fill="#D1FAE5" font-family="monospace" font-size="10" font-weight="600">HIGH-SIGNAL UI</text>
+
+    <!-- Card Content -->
+    <text x="20" y="58" fill="#94A3B8" font-family="monospace" font-size="11">
+      <tspan fill="#38BDF8">Archetypes:</tspan> Action Items • Comparative • Milestones • Trade-offs
+    </text>
+    <text x="20" y="80" fill="#94A3B8" font-family="monospace" font-size="11">
+      <tspan fill="#818CF8">Structure:</tspan> Concise Context + Scannable Markdown Table + Synthesis
+    </text>
+    <text x="20" y="102" fill="#94A3B8" font-family="monospace" font-size="11">
+      <tspan fill="#34D399">Standard:</tspan> No vague headers; bold anchors; zero text bloat
+    </text>
+    <line x1="20" y1="116" x2="480" y2="116" stroke="#334155" stroke-width="0.8" stroke-dasharray="4 4" />
+    <text x="20" y="128" fill="#64748B" font-family="monospace" font-size="10">Extraction: converts multi-page unstructured text into tight matrices</text>
+  </g>
+</svg>
